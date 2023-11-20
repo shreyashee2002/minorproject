@@ -1,0 +1,30 @@
+link: https://arxiv.org/abs/2105.13778
+topic: "Why Would I Trust Your Numbers?" On the Explainability of Expected Values in Soccer
+
+This research paper addresses the challenge of estimating the probability that a soccer shot will result in a goal, with a focus on creating a model
+that can be easily explained to soccer practitioners unfamiliar with mathematics and machine learning. Inspired by prior work [Decroos and Davis, 2
+019], the authors train an Explainable Boosting Machine model, known for its interpretability. The key contributions are in the representation of
+shot locations and the explainability of the model.
+
+Background: Soccer's low-scoring nature makes quantifying the impact of individual actions challenging.Various approaches have been proposed to 
+distribute the reward for scoring a goal across the actions leading to the goal-scoring opportunity. Prior research has operated on both match event
+data and tracking data.
+
+Methodology: The study builds on the work of Decroos and Davis [2019], focusing on creating an Explainable Boosting Machine model for shot 
+valuation.
+Shot locations are represented using a feature vector reflecting a fuzzy assignment to designated zones on the pitch. The model's additiveness
+allows for easy inspection and interpretation.
+
+Conclusion and Future Work: The research achieves its goal of creating an explainable model while exhibiting similar performance to existing 
+approaches. Future directions include extending the approach to value actions beyond shots, refining the representation of shot locations, and
+investigating the model's robustness.
+
+
+Significance: The research contributes to bridging the gap between sophisticated analytics models and the practical needs of soccer practitioners.
+The proposed approach offers interpretability without compromising performance.
+
+Limitations and Future Challenges:The paper acknowledges the need for more comprehensive comparative tests with soccer practitioners and potential
+vulnerabilities to adversarial examples. The future challenge involves extending the approach to value various types of actions and refining the
+representation of shot locations.
+In summary, the paper successfully introduces an approach that combines accuracy and interpretability in valuing soccer shots, aiming to make
+advanced analytics more accessible to soccer practitioners.

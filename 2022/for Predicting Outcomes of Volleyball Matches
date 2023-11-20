@@ -1,0 +1,29 @@
+link for the paper: https://arxiv.org/abs/2206.09258
+Machine Learning in Sports: A Case Study on Using Explainable Models for Predicting Outcomes of Volleyball Matches
+
+This research paper explores the application of Explainable Artificial Intelligence (XAI) in predicting outcomes of matches in the Brazilian 
+Volleyball League (SuperLiga). The focus is on addressing the interpretability challenge posed by black-box Deep Neural Networks (DNNs) commonly
+used in sports predictions. The two-phased XAI approach involves using interpretable rule-based models (Boolean Rule Column Generation and Logistic
+Regression) in the first phase and constructing non-linear models (Support Vector Machine and Deep Neural Network) in the second phase.
+
+Key Findings:
+1. Black-box models (SVM, Neural Network) outperform white-box models (Boolean Rule Column Generation and Logistic Regression) in terms 
+of predictive accuracy (measured by Accuracy, F1-Score, and AUC-ROC).
+2. The SVM model provides the most accurate predictions among all models.
+3. Post-hoc explanations are constructed using ProtoDash (for finding prototypical examples) and SHapley Additive exPlanations (SHAP, 
+a game-theoretic approach).
+4. ProtoDash provides prototypical examples similar to the match in question, offering an intuitive understanding of the underlying characteristics.
+5. SHAP explanations reveal the contribution of individual features to the model's predictions, aiding interpretability.
+
+**Implementation Implications:**
+1. **Model Selection:** Consider using black-box models like SVM or Neural Networks for sports outcome predictions due to their superior accuracy.
+2. **Explanations:** Implement post-hoc explanation methods such as SHAP and ProtoDash to provide interpretable insights into the model's predictions.
+3. **Feature Importance:** Pay attention to features highlighted by SHAP explanations, as they indicate the contribution of each feature to the 
+model's decision.
+4. **Prototypical Examples:** Use ProtoDash to find prototypical examples that represent the distribution of the dataset, aiding in understanding the
+characteristics of specific predictions.
+5. **Meta-Learning:** Explore meta-learning methods to improve model performance by leveraging knowledge across different sports leagues or sports 
+types.
+
+This approach enhances the transparency of sports outcome predictions, making it valuable for decision-makers in sports analytics, coaching staff, 
+and individuals involved in sports betting decisions.

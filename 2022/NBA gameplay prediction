@@ -1,0 +1,24 @@
+Link: https://www.sciencedirect.com/science/article/pii/S0925231222001333
+Topic: Explainable AI techniques with application to NBA gameplay prediction
+
+The research paper is centered around the analysis of NBA data spanning from the 1980s to the present. Acknowledging the inherent challenge of dealing
+with limited data in this context, the study adopts various strategies for handling missing values. It particularly focuses on avoiding biases 
+introduced by mean value imputation and proposes a novel predictive modeling approach. This involves training a random forest regressor for each null
+field, ensuring that imputed values are derived from similar data points, thereby enhancing the robustness of the imputation process.
+
+Data cleaning procedures are applied meticulously, with an emphasis on standardizing the representation of NBA seasons. The aggregation of data to
+a monthly average level is performed to facilitate a more comprehensive analysis. Datasets are then joined to create a unified dataset that is free 
+of null values, providing a solid foundation for subsequent analyses.The study delves into the classification of NBA teams into post-season playoffs,
+offering detailed insights into the methods employed for data preparation and processing. This section of the research aims to contribute to the 
+understanding of the factors influencing playoff qualification.
+
+Results and discussions encompass a wide range of analytical approaches. Descriptive analysis of NBA gameplay is conducted, shedding light on various 
+aspects of team performance. Clustering algorithms are applied to identify patterns and groupings within the data. Principal Component Analysis (PCA) 
+is leveraged for dimensionality reduction, enhancing the interpretability of the dataset.
+
+A notable aspect of the study is its identification of potential NBA dynasties, characterized by distinct playing styles across different time periods.
+The research employs machine learning techniques, including a feed-forward neural network, to predict win ratios and classify teams for playoffs. 
+The results indicate promising accuracy in these predictions.
+The paper concludes by underscoring the importance of domain expertise in validating the outputs of machine learning models. It highlights trends in
+NBA gameplay attributes and engages in a discussion on the interpretability of AI models in predicting team success and playoff classification. The 
+comprehensive nature of the analysis contributes valuable insights to the intersection of sports analytics and machine learning.

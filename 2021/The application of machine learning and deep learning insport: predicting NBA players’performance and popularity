@@ -1,0 +1,124 @@
+The application of machine learning and deep learning insport: predicting NBA players’performance and popularity(Heading)
+https://www.tandfonline.com/doi/full/10.1080/24751839.2021.1977066 (link)
+INTRODUCTION
+1. Context and Importance of NBA:
+   - The NBA is a highly popular sports league in America and globally, 
+with a significant economic impact.
+   - In the 2018–2019 season, NBA teams generated over 8.7 billion dollars in revenue, 
+and the top five teams were collectively worth $16.8 billion.
+
+2. Application of Machine Learning and Deep Learning in Sports Analytics:
+   - The study aims to evaluate the effectiveness of applying Machine Learning (ML) 
+and Deep Learning (DL) in the sports domain, specifically basketball.
+   - Previous studies focused on predicting game outcomes or analyzing player data using advanced technical tools. 
+This study focuses on widely available player statistics without complex tools.
+
+3. Objectives of the Study:
+   - The primary objectives are to predict players' future performance and popularity 
+based on their regular game statistics.
+   - Popularity is assessed by forecasting players' selection for 
+the NBA All-Star game, considering the significant impact of fan voting on player selection.
+
+4. Business Value of Player Popularity:
+   - Popular players contribute significantly to their team's brand equity, 
+raising awareness and attracting public attention.
+   - Star players generate externalities that increase attendance and 
+overall league revenue beyond their individual team's success.
+
+5. Data Science in Sports Analytics:
+   - With the rapid development of data science, ML, 
+and Data Mining (DM) are applied in various fields, including sports analytics.
+   - Sport Analytics has become prominent for improving 
+performance and operations on and off the court.
+
+6. Extension from Previous Study:
+   - The study extends previous work in 2020 by providing 
+detailed information on each ML model's mechanism and reasons for selection.
+   - Emphasis is placed on accurate data collection and preparation 
+to understand relationships among basketball players' attributes.
+
+7.Inclusion of Deep Learning:
+   - In addition to traditional ML, the study explores the potential of deep learning, 
+a popular technique in computer vision, natural language processing, and sentiment analysis.
+   - Deep learning's effectiveness in dealing with structured and relatively 
+small datasets is examined and compared with traditional ML for the basketball dataset.
+
+8.CRISP-DM Methodology:
+   - The study follows the CRISP-DM methodology (Cross-Industry Standard Process for Data Mining) 
+for constructing ML and DL models.
+   - The methodology involves six phases: Business understanding, Data understanding, 
+Data preparation, Modelling, Evaluation, and Deployment.
+
+9. Study Phases:
+   - The study focuses on the first five phases of CRISP-DM, including understanding the business issue, 
+collecting and analyzing data, preparing the data for modeling, training multiple algorithms, 
+and evaluating models based on predetermined objectives and criteria.
+
+10.Future Improvement:
+    - The final phase provides limitations for future improvement, suggesting ongoing considerations 
+and areas for refinement in deploying ML models into production.
+
+This comprehensive overview sets the stage for a detailed examination of the application of ML and DL in 
+predicting basketball player performance and popularity, with a focus on the NBA.
+
+Literature review-:
+1) Historical Application of Data Mining in Basketball:
+  - In the 1990s, IBM's Advanced Scout used data mining, specifically Attribute Focusing, 
+to reveal patterns in basketball statistics for NBA management.
+
+2) Predictive Models in Sports:
+  - Various predictive models have been applied, including Hidden Markov Models, Bayesian approaches, 
+and data mining techniques, achieving accuracies up to 75% in predicting match outcomes.
+
+3) ML in College Football Prediction:
+  - Leung and Joseph proposed a data mining technique for predicting college football game outcomes, 
+achieving high accuracy by analyzing historical results and similarities between teams.
+
+4) NCAAB Match Prediction with ML:
+  - Zimmermann et al. used machine learning, specifically a multi-layer perceptron, for predicting NCAAB match outcomes, 
+discovering unexpected findings and achieving a milestone 74% predictive accuracy.
+
+5) DL in NFL Team Winning Prediction:
+  - Kahn's deep learning model (Neural Network 10-3-2) predicted NFL team wins with 75% accuracy, outperforming domain experts.
+
+6) Cross-Sport Prediction with NN:
+  - McCabe and Trevathan's Neural Network model (20-10-1) predicted outcomes in various sports, showcasing an average accuracy of 67.5%.
+
+7) Gap in Player Performance and Popularity Research:
+  - Existing studies mostly focus on predicting game outcomes, neglecting individual players' performance and popularity, which significantly impact team outcomes and revenue.
+
+8) Study Focus and Contribution:
+  - The current study addresses this gap, concentrating on evaluating and forecasting individual players' performance and popularity using both Traditional 
+ML and DL models, providing a comparative analysis in a relatively small basketball dataset.
+
+Data Sources:
+
+Two datasets used: NBA player stats since 1950 from basketball-reference.com and NBA All-Star rosters from basketball.realgm.com.
+Imbalanced Data Issue:
+
+The second dataset exhibits imbalanced data (only 6% All-Star players), addressed through under-sampling and over-sampling techniques.
+Evaluation Metrics:
+
+Various metrics selected for ML model assessment, including RMSE, MAE, Accuracy, Precision, Recall, ROC AUC, and F1 scores.
+Data Preparation for Regression Model:
+
+19 predictor variables used for the regression model, with data partitioned into training-test sets (80–20 ratio) and further divided into train-valid sets (80–20 ratio).
+Stratified Sampling:
+
+Stratified sampling with a Year ratio to avoid uneven representation of players' data in different periods.
+Data Engineering for Second Objective:
+
+Consideration of the predictor variable being selected for the current season's All-Star game to predict players' probability of being selected next season.
+Handling Missing Values:
+
+Missing values in percentage variables assumed to be zero, as no attempt or success was recorded.
+Class Imbalance Solutions:
+
+Over-sampling techniques such as random over-sampling and synthetic minority oversampling technique (SMOTE) used to address class imbalance, along with under-sampling.
+SMOTE Methodology:
+
+SMOTE involves creating new minority class examples by randomly choosing one of the k nearest neighbors of a minority class instance and generating new instance values through random interpolation.
+Under-sampling Technique:
+
+Under-sampling applied to balance class distribution by randomly eliminating majority class instances.
+This section outlines the datasets, addresses imbalanced data issues, defines evaluation metrics, explains data preparation for regression models, and details strategies for handling missing values and class imbalances.
